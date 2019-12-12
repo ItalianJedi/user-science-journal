@@ -65,7 +65,7 @@
             </h2>
             <span class="meta">Posted by
               <a href="#">Tony Graf</a>
-              on December 10, 2018</span>
+              on November 6, 2018</span>
           </div>
         </div>
       </div>
@@ -77,65 +77,40 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <h3 class="post-subtitle">
-            Summary Report
-          </h3>
+          <h2>Evaluating Accessibility</h2>
           <p>
-            For my final entry in my User Science Journal, I am going to summarize my goal and content experiments
-            using Google Analytics.
+            The last two weeks I’ve used the website for Vinyl Me, Please to study and address usability issues. I want to continue to use Vinyl Me, Please for this week’s assignment which is to take a look at the accessibility of their website.
           </p>
-          <h3>Set Up and Goal</h3>
+          <h2>Analysis Tools</h2>
           <p>
-            We learned how to set up Google Analytics by watching the set up videos by Google. I had to watch them
-            twice to get a good idea of what Google Analytics is and how to utilize them. Our instructor also provided
-            a couple walk throughs to help us get started.
+            For my analysis I am going to use the WAVE Web Accessibility Evaluation Tool and the W3C Web Accessibility Initiative.
+            <p>http://wave.webaim.org/</p>
+            <p>https://www.w3.org/WAI/test-evaluate/preliminary/</p>
           </p>
-          <p>
-            After setting up we were tasked to set up a Goal. The Goal I set up was was to get people to watch a video
-            on accessibility called What’s New in Web Accessibility which is about a new auditing tool called
-            Lighthouse that Google put in Chrome. I thought it was a very interesting discussion and very useful to
-            this blog and class I am in. I started sharing the link on Slack and random people on Facebook. I even
-            found a Web Accessibility group on Facebook which I joined and shared the link. I didn’t get very many
-            people to click on it but was happy when I saw a couple people achieve my goal.
-          </p>
-          <h3>Content Experiments and Google Optimize</h3>
-          <p>
-            Next we were to set up content experiments to see how we can change the page to get more people to
-            complete the goal. I ended up doing two experiments. The first one failed during set up so I was unable to
-            see it finish it. Basically, I just made a new blog post linking to a new accessibility video. The second
-            experiment was setting up Google Optimize. This wasn’t a very fun experiment because during set up I just
-            changed the wording of the headline.
-          </p>
-          <p>
-            I was trying to upload some screen caps but I am keep getting errors. Basically, the original headline was
-            What’s New in Web Accessibility (Google I/O ’18) while the variant just took out (Google I/O ’18). Nothing
-            groundbreaking or particularly interesting but the only thing I can really think of for a duration goal.
-            Looking back I should have kept asking people to look at the video so I have more data to analyze.
-            According to reporting in Google Optimize, where I see that there were two sessions for three days running
-            (Google recommends two weeks) and in the improvement overview, the variant had one session.
-          </p>
-          <h3>Thoughts</h3>
-          <p>
-            I didn’t get many hits which I don’t believe was the point of this exercise. What we were trying to
-            accomplish is understanding Google Analytics and how to set up Goals and Content Experiments. This is very
-            important to a web developer even if they don’t use Google Analytics on a day to day basis. I think this
-            will be useful for me when I enter the workplace and if I were to use it on personal projects.
-          </p>
-          <p>
-            Knowing that this page would most likely not get many views, I choose a goal that would be relevant to
-            someone who is interested in User Accessibility. To make it easier for people to complete the goal, I
-            choose a 5 minute mark for a successful completion. I know I wouldn’t get anyone to complete the goal if
-            it was the full 20 unless someone came on here on their own because it is something they are really
-            interested in it. And even if they were really interested in it, I am sure they will most likely have seen
-            the video.
-          </p>
-          <p>
-            If I could do this all over again, I would have used the other website I have which is a music blog. I
-            think I will be able to get people to get to it and possibly get traffic without me begging them to come.
-            This was really fun and I may even try it on my music blog when I get some free time. I would have also
-            tried to promote this more so I get better data to analyze.
-          </p>
-
+          <h2>Results</h2>
+          <img src="img/10.png" alt="">
+          <h2>Styles</h2>
+          <img src="img/11.png" alt="">
+          <h2>Contrast</h2>
+          <img src="img/12.png" alt="">
+          <p>When filtering for WCAG 2.0 AA, we found:</p>
+          <ul>
+            <li>1 Error: Empty Link</li>
+            <li>4 Alerts: 2 Skipped Heading Level, 1 Suspicious Link Text, 1 Noscript element (which is currently unchecked)</li>
+            <li>28 Features: These mainly deal with alternative text</li>
+            <li>42 Contrast Errors</li>
+          </ul>
+          <h2>Analysis and Recommendations</h2>
+          <p>Vinyl Me, Please did very well when it comes to accessibility. Here are a couple of things they can do.</p>
+          <ol>
+            <li>The only real error this site had was a link at the top that contained no text. The user will not know the purpose of this link which is the logo of the website. Vinyl Me, Please should provide some text to this link to let the users know the functionality of that link.</li>
+            <li>There were two alerts mentioning there were no heading. This can be addressed by adding a <h2> or </h3> tag so the user knows there is supposed to be a heading.</li>
+            <li>There is one suspicious text link which just looks like it is out of context. It is recommended that the text link be reworded so there is more description of its destination.</li>
+            <li>To address the 42 contrast errors, the contrast between the text and the background should increase.</li>
+          </ol>
+          <h2>Section 508</h2>
+          <p>I did a quick comparison with the standards from Section 508. They are pretty much the same but W3C is a little more through. As we can see, the empty link error is unchecked for Section 508 while everything else remains the same. I will continue to use W3C for accessibility analysis.</p>
+          <img src="img/13.png" alt="">
           <p>Placeholder text by
             <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by
             <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
